@@ -3,7 +3,7 @@
 Summary: Perl module for the GNOME panel-applet library
 Name:    perl-%module
 Version: 0.0
-Release: %mkrel 6
+Release: %mkrel 7
 License: GPL or Artistic
 Group:   Development/GNOME and GTK+
 Source:  %module-%version.tar.bz2
