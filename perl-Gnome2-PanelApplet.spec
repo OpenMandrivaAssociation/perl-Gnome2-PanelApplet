@@ -2,8 +2,8 @@
 
 Summary: Perl module for the GNOME panel-applet library
 Name:    perl-%module
-Version: 0.0
-Release: %mkrel 7
+Version: 0.01
+Release: %mkrel 1
 License: GPL or Artistic
 Group:   Development/GNOME and GTK+
 Source:  %module-%version.tar.bz2
@@ -11,11 +11,12 @@ URL: http://gtk2-perl.sf.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: gtk+2-devel 
 BuildRequires: perl-ExtUtils-Depends 
-BuildRequires: perl-Gnome2 >= 0.30
-BuildRequires: perl-Glib > 1.00
+BuildRequires: perl-Gnome2 >= 1.042
+BuildRequires: perl-Glib > 1.153
 BuildRequires: libpanel-applet-devel
 BuildRequires: perl-ExtUtils-PkgConfig
 Buildrequires: perl-devel
+Requires: perl-Glib > 1.153
 
 Requires: gtk+2
 
