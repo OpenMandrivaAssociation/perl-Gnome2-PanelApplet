@@ -12,11 +12,11 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: gtk+2-devel 
 BuildRequires: perl-ExtUtils-Depends 
 BuildRequires: perl-Gnome2 >= 1.042
-BuildRequires: perl-Glib > 1.153
+BuildRequires: perl-Glib >= 1.153
 BuildRequires: libpanel-applet-devel
 BuildRequires: perl-ExtUtils-PkgConfig
 Buildrequires: perl-devel
-Requires: perl-Glib > 1.153
+Requires: perl-Glib >= 1.153
 
 Requires: gtk+2
 
