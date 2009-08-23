@@ -10,6 +10,7 @@ Group:      Development/GNOME and GTK+
 URL:        http://gtk2-perl.sf.net/
 Source:     %{upstream_name}-%{upstream_version}.tar.bz2
 BuildRequires: gtk+2-devel 
+BuildRequires: gnomeui2-devel
 BuildRequires: perl-ExtUtils-Depends 
 BuildRequires: perl-Gnome2 >= 1.042
 BuildRequires: perl-Gnome2-GConf >= 1.044
