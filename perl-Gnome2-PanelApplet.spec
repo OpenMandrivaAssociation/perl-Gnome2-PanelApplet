@@ -1,14 +1,16 @@
-%define upstream_name       Gnome2-PanelApplet
-%define upstream_version    0.02
+%define upstream_name    Gnome2-PanelApplet
+%define upstream_version 0.02
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
+
 Summary:    Perl module for the GNOME panel-applet library
-License:    GPL or Artistic
+License:    GPL+ or Artistic
 Group:      Development/GNOME and GTK+
-URL:        http://gtk2-perl.sf.net/
-Source:     %{upstream_name}-%{upstream_version}.tar.bz2
+Url:        http://gtk2-perl.sf.net/
+Source0:    http://www.cpan.org/modules/by-module/Gnome2/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires: gtk+2-devel 
 BuildRequires: gnomeui2-devel
 BuildRequires: perl-ExtUtils-Depends 
@@ -18,16 +20,18 @@ BuildRequires: perl-Glib >= 1.153
 BuildRequires: libpanel-applet-devel
 BuildRequires: perl-ExtUtils-PkgConfig
 Buildrequires: perl-devel
-Requires: perl-Glib >= 1.153
+
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
 Requires: gtk+2
-BuildRoot: %{_tmppath}/%{name}-%{version}
+Requires: perl-Glib >= 1.153
 
 %description
 This module provides perl access to the libpanel-applet library,
 the Gnome Applet library.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 perl Makefile.PL INSTALLDIRS=vendor
 
 %build
@@ -41,12 +45,9 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-
 %files
 %defattr(-, root, root)
 %doc examples
 %{_mandir}/*/*
 %{perl_vendorarch}/Gnome2/*
 %{perl_vendorarch}/auto/*
-
-
