@@ -21,9 +21,6 @@ BuildRequires:	perl(Gnome2) >= 1.042
 BuildRequires:	perl(Gnome2::GConf) >= 1.044
 Buildrequires:	perl-devel
 
-Requires:	gtk+2
-Requires:	perl(Glib) >= 1.153
-
 %description
 This module provides perl access to the libpanel-applet library,
 the Gnome Applet library.
