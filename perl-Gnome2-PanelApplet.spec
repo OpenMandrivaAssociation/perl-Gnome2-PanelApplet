@@ -11,9 +11,9 @@ Group:      Development/GNOME and GTK+
 Url:        http://gtk2-perl.sf.net/
 Source0:    http://www.cpan.org/modules/by-module/Gnome2/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires: gtk+2-devel 
-BuildRequires: gnomeui2-devel
-BuildRequires: libpanel-applet-devel
+BuildRequires: pkgconfig(gtk+-2.0)
+BuildRequires: pkgconfig(libgnomeui-2.0)
+BuildRequires: pkgconfig(libpanelapplet-2.0)
 BuildRequires: perl(ExtUtils::Depends)
 BuildRequires: perl(ExtUtils::PkgConfig)
 BuildRequires: perl(Glib)          >= 1.153
