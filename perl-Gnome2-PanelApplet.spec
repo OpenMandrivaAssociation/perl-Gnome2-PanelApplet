@@ -8,7 +8,7 @@ Release:	2
 Summary:	Perl module for the GNOME panel-applet library
 License:	GPL+ or Artistic
 Group:		Development/GNOME and GTK+
-Url:		http://gtk2-perl.sf.net/
+Url:		https://gtk2-perl.sf.net/
 Source0:	http://www.cpan.org/modules/by-module/Gnome2/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	pkgconfig(gtk+-2.0)
